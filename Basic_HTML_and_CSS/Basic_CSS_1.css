@@ -7,4 +7,6 @@ p {
 .p1 {
     color: rgba(17, 0, 255, 0.815);
     text-align: right;
+    font-size: medium;
+    background-color: red;
 }
