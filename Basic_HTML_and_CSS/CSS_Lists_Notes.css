@@ -1,0 +1,10 @@
+
+
+/* Changes the Ordered List from numbers to roman numerals */
+ol {
+    list-style-type: upper-roman;
+}
+/* Changes the Unordered List from cirlce bullet points to square bullet points */
+ul {
+    list-style-type: square;
+}

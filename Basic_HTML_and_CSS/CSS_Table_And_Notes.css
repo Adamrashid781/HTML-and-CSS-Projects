@@ -1,0 +1,41 @@
+
+
+/*  tr - Table Row
+    th - Table Header
+    td - Table Data
+    */
+
+/* makes a border around the table in the color Silver */
+table {
+    border: 3px solid silver;
+}
+
+
+/* Makes the table cell yellow when hovered over */
+td:hover{
+    background-color: yellow;
+    color: black;
+}
+
+
+/* Makes the table's header black with colored text */
+tr, th{
+    background-color: black;
+    color: cornsilk;
+}
+
+
+/* Makes the table rows dark green */
+tr, td {
+    background-color: darkgreen;
+    color: white;
+}
+
+/* Changes the Ordered List from numbers to roman numerals */
+ol {
+    list-style-type: upper-roman;
+}
+/* Changes the Unordered List from cirlce bullet points to square bullet points */
+ul {
+    list-style-type: square;
+}
