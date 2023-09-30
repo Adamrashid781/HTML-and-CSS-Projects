@@ -11,9 +11,13 @@
         <div>
             <div>
                 <ul>
-                    <li>HOME</li>
-                    <li>GALLERY</li>
-                    <li>RESERVATION</li>
+                    <!-- this turns the text into buttons that jump to the section with the 
+                        matching ID -->
+                    <a href="#home" id="link"> <li>HOME</li> </a> 
+                    <a href="#gallery" id="link"> <li>GALLERY</li> </a>
+                    <a href="#contact" id="link"> <li>RESERVATION</li> </a>
+                    
+                    
                 </ul>
             </div>
         </div>
@@ -22,10 +26,10 @@
 
         <!-- HOME -->
 
-        <div>
+        <div id="home">
             <div>
                 <div>
-                    <span>The Space Station</span>
+                    <span><i>Rashid's</i> Porsche</span>
                 </div>
             </div>
         </div>
@@ -35,7 +39,7 @@
         <!-- GALLERY -->
 
         <section>
-            <div>
+            <div id="gallery">
                     <h1>Gallery</h1>
                     <div>
 
@@ -44,7 +48,7 @@
                             <div>
                                 <div>
                                     <h3>Click to Enlarge</h3>
-                                    <p>We have several space launches daily, book your flight todat</p>
+                                    <p>We have several vehicles availabley, book your test drive today!</p>
 
                                 </div>
                             </div>
@@ -60,12 +64,12 @@
 
         <!-- RSVP -->
         <section>
-            <div>
+            <div id="contact">
                 <div>
                     <h1>Reservation</h1>
                     <div>
-                        <h2><span>Your Adventure is just around the moon.</span>
-                            <br/> Reserve your flight today!
+                        <h2><span>Your new Porsche is right inside!</span>
+                            <br/> Reserve your test drive today!
                         </h2>
                         <p>
                             Please provide us with your basic information.
