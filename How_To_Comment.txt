@@ -7,3 +7,10 @@ JavaScript  /* Text here */     &       //
 
 Link to all CSS Properties
 https://www.w3schools.com/cssref/index.php
+
+
+
+Link to Favicons 
+1. https://www.favicon-generator.org
+2. https://favicon.io/emoji-favicons/
+3. https://www.ionos.com/tools/favicon-generator
