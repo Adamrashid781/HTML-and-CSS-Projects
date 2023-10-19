@@ -1,0 +1,72 @@
+
+
+
+
+
+body{
+    background-image:  url(./image_1.jpg);
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.font_1 {
+    background-color: black; 
+    color: black;
+    
+}
+.font_2 {
+     
+    color: whitesmoke;
+    
+}
+.img_1{
+    float: center;
+}
+
+.img_2{
+    float: right;
+}
+
+h2 {
+    line-height: 50px;
+    color: #e91c1c;
+}
+p {
+    font-weight: 300;
+    line-height: 30px ;
+    padding-bottom: 15px ;
+}
+
+
+.reservation form {
+    font-size: 15px ;
+    outline: none;
+    font-weight: 600;
+    color: #8d8e8f ;
+    padding: 12px 12px ;
+    width: 70% ;
+    border: 1px solid #808080 ;
+    margin: 2% auto ;
+    border-radius: 7px ; 
+    background: rgb(227, 222, 222);
+    box-shadow: 2px 3px 3px 0 rgba(0, 0, 0, 0.3);
+    font-family: 'Raleway', sans-serif ;
+}
+
+.reservation input[type="text"] {
+    font-size: 15px ;
+    outline: none ;
+    font-weight: 600 ;
+    color: #8d8e8f ;
+    padding: 2% 1% 2% 7%;
+    width: 80% ;
+    border-top: 1px solid #090b0d;
+    border-right: 2px solid #424549 ;
+    border-bottom: 2px solid #424549 ;
+    border-left: 1px solid #090b0d;
+    margin: 10px 1em ;
+    border-radius: 7px ;
+    background: #13161b;
+    box-shadow: inset 0px 3px 0px 0px rgba(0, 0, 0, 0.15);
+    font-family: 'Raleway', sans-serif;
+}

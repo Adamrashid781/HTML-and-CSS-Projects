@@ -2,31 +2,7 @@
 <html>
     <title>One Pager</title>
     <head>
-        <style>
-            body{
-                background-image: url(image_1.jpg);
-                
-                background-size: cover;
-                background-repeat: no-repeat;
-            }
-            .font_1 {
-                background-color: black; 
-                color: black;
-                
-            }
-            .font_2 {
-                 
-                color: whitesmoke;
-                
-            }
-            .img_1{
-                float: center;
-            }
-
-            .img_2{
-                float: right;
-            }
-        </style>
+        <link rel="stylesheet" href="one-pager-css.css">
     </head>
 
     <body>
@@ -74,7 +50,7 @@
             </div>
 
             <!-- CONTACT -->
-            <div id="contact" class="font_2">
+            <div id="contact" class="reservation">
                 <div>
                 <center>
                     <h1>  Reservation </h1>
@@ -88,11 +64,21 @@
                         </p>
 
                         <div>
+                            <!-- In the future, put these <em> tags in <p> tags and seperate them into 
+                                their own <div> containers top seperate everything -->
                             <form action="" method="post">
-                                <em>First Name:</em>     <input class="rsvp" type="text" name="First_Name"><br>
-                                <em>Last Name:</em>      <input class="rsvp" type="text" name="Last Name"><br>
-                                <em>Email:</em>          <input class="rsvp" type="email" name="Email"><br>
-                                <em>Phone Number:</em>   <input class="rsvp" type="password" name="Phone Number"><br>
+                                <em>First Name:</em><br>    
+                                <input class="rsvp" type="text" name="First_Name">
+                                <br>
+                                <em>Last Name:</em> <br>     
+                                <input class="rsvp" type="text" name="Last Name">
+                                <br>
+                                <em>Email:</em><br>     
+                                <input class="rsvp" type="text" name="Email">
+                                <br>
+                                <em>Phone Number:</em><br>  
+                                <input class="rsvp" type="text" name="Phone Number">
+                                <br>
                                 <div class="form-spacer">
                                     <label class="terms">Terms and Conditions</label>
                                 </div>
