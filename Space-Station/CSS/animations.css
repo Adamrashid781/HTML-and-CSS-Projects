@@ -59,13 +59,13 @@
         text-align: center;
         margin: 15px auto ;
         width: 300px;
-        height: 169px ;
+        height: 250px ;
     }
 
     .photo-container img {
         max-width: 100%;
         width: 300px;
-        height: 169px;
+        height: 250px;
     }
 
     .photo-overlay {
