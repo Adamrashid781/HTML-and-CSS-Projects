@@ -51,7 +51,7 @@ td {
     color: azure;
 }
 
-.centere-text {
+.center-text {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -107,9 +107,10 @@ td {
     flex: 50%;
 }
 
-p:hover {
+.overlay:hover {
     background: #ddd;
-    color: black;
+    
+    opacity: 1;
 }
 
 
@@ -132,9 +133,27 @@ p:hover {
     border-radius: 7px;
 }
 
-.container:hover .overlay {
+.overlay_video{
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 400px ;
+    width: 200px;
+    opacity: 0;
+    transition: .5s ease;
+    justify-content: center;
+    background-color: blanchedalmond;
+    border-radius: 7px;
+}
+.overlay_video:hover {
+    background: #ddd;
+    
     opacity: 1;
 }
+
+
 
 .text {
     color:rgb(182, 118, 35);
