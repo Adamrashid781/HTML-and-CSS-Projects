@@ -45,14 +45,25 @@ td {
 }
 
 
-.container {
+.img-container {
     position: relative;
+    margin: auto;
+    width: 400px;
     text-align: center;
+    
+    color: azure;
+}
+.video-container {
+    position: relative;
+    margin: auto;
+    width: 200px;
+    text-align: center;
+    
     color: azure;
 }
 
 .center-text {
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -109,17 +120,13 @@ td {
 
 .overlay:hover {
     background: #ddd;
-    
     opacity: 1;
 }
 
 
-.image {
-    display: block;
-    
-}
 
-.overlay{
+
+.img-overlay{
     position: absolute;
     top: 0;
     bottom: 0;
@@ -131,23 +138,33 @@ td {
     transition: .5s ease;
     background-color: blanchedalmond;
     border-radius: 7px;
+    display: block;
 }
 
-.overlay_video{
-    position: relative;
-    top: 0;
+
+.video-overlay{
+    position: absolute;
+    top: 70px;
     bottom: 0;
     left: 0;
     right: 0;
-    height: 400px ;
+    height: 358px ;
     width: 200px;
     opacity: 0;
     transition: .5s ease;
     justify-content: center;
     background-color: blanchedalmond;
-    border-radius: 7px;
+
 }
-.overlay_video:hover {
+
+
+.img-container:hover .img-overlay{
+    background: #ddd;
+    
+    opacity: 1;
+}
+
+.video-container:hover .video-overlay {
     background: #ddd;
     
     opacity: 1;
@@ -163,4 +180,13 @@ td {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+    html{
+        background-color: red;
+    }
 }
