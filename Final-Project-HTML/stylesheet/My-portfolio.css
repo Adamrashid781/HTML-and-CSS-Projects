@@ -201,3 +201,109 @@ footer {
 }
 
 /******* END OF VIDEO STYLING  ********/
+
+/* TABLE STYLING - this section will cover the styling of the columns and rows within the tabke */
+* { /* The asterisk is a universl selector that applies this affect to all elements on the page */
+    box-sizing: border-box; /* this creates a box with a border within which we will place most of our text inside */
+}
+
+.Column_1 {
+    float: left; 
+    width: 50% ; /* This ensures that the column will take up only half of the pages width */
+    padding: 10px ;
+    padding-top: 3%; /* This ensures there is space between the top of the column and our headings  */
+    height: 400px; /* This sets the height of the column to 400px- this may need to be adjusted depending on the text you enter */
+    background-color: #f2f2f2; /* This sets teh background color for the columns with class column_1 */
+}
+
+/* Screens 576px and smaller will display a scroll bar if the text overflows the column height */
+@media screen and (max-width: 576px) {
+    .Column_1 {
+        overflow: auto;
+    }
+}
+
+.Column_2 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    padding-top: 1.9%;
+    height: 400px;
+    background-color: #4d4d4d;
+}
+
+/* This class is applied to the columns in the final row, overriding the height and padding to 
+provide more room for the contact form while keeping the rest of the formatting for Column_1 and Column_2 */
+.Column_tall {
+    padding-top: 3.5% ;
+    height: 450px;
+}
+
+/* This inserets something after the content of selected elements 
+(in this case the elements with class "Row") */
+.Row:after {
+    content: ""; /* By leaving this blank we are allowing the footer (covered lower down) 
+                    to be displayed - removing it nakes the footer overwrite a column */
+    Display: table; /* The display property specifies the type of display behavior; 
+                    the table value tells the browser to treat the element as a table */
+    clear: both; /* This clears any other elements from floating on the left or the right of an element  */
+
+}   
+/* END OF TABLE STYLING */
+
+
+/* CONTACT FORM STYLING */
+/* input{type=text] targets all the text input sections of the contact form */
+input, textarea[type=text] {
+    width: 100%; /*each input box covers the full with of the container */
+    padding: 12px;  /* Adds padding within the text box */
+    border: 1px solid #ccc ; /* setting a solid border and its color*/
+    border-radius: 4px; /* slightly rounds the corner of the text box */
+    box-sizing: border-box; /* this creates a box with a border around the contact form input boxes */
+    margin-top: 6px; /* Adds a margin to the top of the text box */
+    margin-bottom: 16px; /* Adds a margin to the bottom of the text box */
+    resize: vertical; /* This allows the user to resize the text boxes vertically */
+    font-family: perpetua, rockwell extra bold ;
+} 
+
+/* Hover effects for input boxes */
+input[type=text]:hover {
+    box-shadow: 0 0 5px #00004d inset; /* This creates a blue shadow in the text box when hovered over */
+}
+textarea[type=text]:hover {
+    box-shadow: 0 0 5px #00004d inset; /* This creates a blue shadow in the textarea box when hovered over */
+}
+
+/* Submit button */
+input[type=submit] {
+    background-color: black; /* Sets the background color of the submit button to black */
+    color: white ; /* Sets the font color to white */
+    font-weight: bold; /*makes the font of the submit button bold */
+    padding: 12px 20px; /* Adds padding to the submit button */
+    width: 100px;
+    border: none; /* removes the border from the submit button */
+    border-radius: 4px; /* Gives the submit button the same rounded corners as the text boxes */
+    cursor: pointer; /* Changes the cursor to a pointer when over the submit button */
+    display: block; /* allows the submit button to be centered */
+    margin-left: auto ; /* in combination with margin right, this will center the submit button */
+    margin-right: auto ;
+    font-family: perpetua, rockwell extra bold ; 
+}
+
+/* Hover over effect for submit button */
+input[type=submit]:hover {
+    background-color: white; /* turns the background of the submit button white when the user hovers over it */
+    color: black; /*Makes the text blacl when hovered over it */
+    transform: scale(1.5); /* Makes the button increase 1.5 times in size */
+    transition: transform 1.5s; /* Makes the transform effect last 1.5 seconds */
+}
+
+/* Form element */
+form {
+    border-radius: 5px; /* rounds the corners of the contact form*/
+    background-color: #f2f2f2;
+    padding: 10px; /* adds padding to the contact form */
+    font-family: "Trebuchet MS", optima;
+}
+
+/* END OF CONTACT FORM STYLING */
