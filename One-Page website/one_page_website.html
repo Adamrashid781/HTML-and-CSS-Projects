@@ -2,11 +2,12 @@
 <html>
     <title>One Pager</title>
     <head>
-        <link rel="stylesheet" href="one-pager-css.css">
+        <link rel="stylesheet" href="./CSS/one-pager-css.css">
+        <script src="./JS/one_page_website.js"></script>
     </head>
 
-    <body>
-        
+    <body >
+       
        
         
         <!-- Navigation -->
@@ -22,8 +23,80 @@
         </div>
 
 
-        <!-- HOME -->
-        <div id="home">
+      
+
+        <!-- Tech academy Light-box show -->
+        <!-- Used For the small images to click on and open the big ones -->
+        <div class="row">
+            <div class="column">
+                <img src="./Images/plant1-small.png" onclick="openModal(), currentSlide(1)" class="hover-shadow" style="width:150px">
+            </div>
+            <div class="column">
+                <img src="./Images/plant2-small.png" onclick="openModal(), currentSlide(2)" class="hover-shadow" style="width:150px">
+            </div>
+            <div class="column">
+                <img src="./Images/plant3-small.png" onclick="openModal(), currentSlide(3)" class="hover-shadow" style="width:150px">
+            </div>
+            <div class="column">
+                <img src="./Images/plant4-small.png" onclick="openModal(), currentSlide()" class="hover-shadow" style="width:150px">
+            </div>
+        </div>
+        <!-- End of small Images to click on -->
+
+        <!-- Start of code that opens main large images -->
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+                <div class="mySlides">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="./Images/plant1.png" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="./Images/plant2.png" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="./Images/plant3.png" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="./Images/plant4.png" style="width:100%">
+                </div>
+
+                <!-- Next/Previous controls -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <!-- Caption text-->
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+                <!-- Thumbnail image controls -->
+                <div class="column">
+                    <img class="demo" src="./Images/plant1-small.png" onclick="currentSlide(1)" alt="pink flowers" style="width:200px">
+                </div>
+
+                <div class="column">
+                    <img class="demo" src="./Images/plant2-small.png" onclick="currentSlide(2)" alt="yellow flowers" style="width:200px">
+                </div>
+
+                <div class="column">
+                    <img class="demo" src="./Images/plant3-small.png" onclick="currentSlide(3)" alt="blue flowers" style="width:200px">
+                </div>
+
+                <div class="column">
+                    <img class="demo" src="./Images/plant4-small.png" onclick="currentSlide(4)" alt="multi color flowers" style="width:200px">
+                </div>
+
+            </div>
+
+        </div>
+
+
+          <!-- HOME -->
+          <div id="home">
             <heading>
                 <h1>Come on in and find the <i>right</i> kind <br>
                     of fun to put between your legs!
@@ -39,12 +112,12 @@
             </h3>
             <div>
                 <div>
-                    <img src="image_3.jpg" width="350" height="250"> <img class="img_2" src="image_4.jpg"  width="350" height="250">
+                    <img src="./Images/image_3.jpg" width="350" height="250"> <img class="img_2" src="./Images/image_4.jpg"  width="350" height="250">
                 </div>
             
 
                 <div>
-                    <img  src="image_5.jpg"  width="350" height="250"> <img class="img_2" src="image_6.jpg"  width="350" height="250">
+                    <img src="./Images/image_5.jpg" width="350" height="250"> <img class="img_2" src="./Images/image_6.jpg"  width="350" height="250">
                 </div>
 
             </div>
@@ -83,7 +156,7 @@
                                     <label class="terms">Terms and Conditions</label>
                                 </div>
                                 <div>
-                                    <input type="submit" value="Submut">
+                                    <input type="submit" value="Submit">
                                 </div>
                             </form>
                         </div>
